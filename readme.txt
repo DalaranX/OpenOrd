@@ -5,6 +5,15 @@ S. Martin
 smartin@sandia.gov
 11/13/2007
 
+Compiler
+--------
+
+First, you can create `bin` directory, and into `src` directory
+run `make`
+
+If you want to use parallel, you need to import `openmpi(http://www.open-mpi.org/)`
+and copy Configuration.gnu_parallel to Configuration.gnu
+
 Citation
 --------
 If you use this code in your research, please cite the following 
