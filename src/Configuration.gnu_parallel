@@ -33,7 +33,7 @@ CC          = mpicc
 AR          = ar
 INC         = -I$(ALL_DIR) -I$(MATH_DIR)
 DBUG        = #-g -Wall -pedantic -g #-DDEBUG #-ansi
-OPT         = -DMUSE_MPI -O3 
+OPT         = -DMUSE_MPI -O3 -lstdc++
 CFLAGS      = $(OPT) $(MOVIE) $(DBUG) $(INC) $(GSLC) $(LIBGAC) -c
 LFLAGS      = $(OPT) $(GSLL) $(LIBGAL)
 
