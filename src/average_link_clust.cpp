@@ -215,7 +215,7 @@ void average_link::next_line ( int pid1, int pid2, float dist,
         //actionid2[nActions] = pid2;
         //nActions++;
 	    if (joinable[cluster1] == 1 && joinable[cluster2] == 1)
-	      joinable[nClusters] == 1;
+	      joinable[nClusters] = 1;
       }
     }
   }

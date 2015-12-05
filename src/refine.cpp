@@ -62,7 +62,6 @@ void read_clust ( string clust_file, map <int, set<int> > &cluster_membership,
   }
     
   clust_in.close ();
-  num_nodes; 
   
   // check that cluster ids go from 0 to #clusters-1 with no gaps (for layout)
   for ( int i = 0; i < num_clusts; i ++ )

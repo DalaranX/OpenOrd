@@ -52,12 +52,13 @@ void read_coord  ( string coord_file, map <string, int_node> &id_catalog )
   {
     id = "";
     coord_in >> id >> coord_x >> coord_y;
-    if ( id != "" )    // check that line is not empty
+    if ( id != "" ) {   // check that line is not empty
       if ( id_catalog.find ( id ) == id_catalog.end() )
       {
         id_catalog[id].x = coord_x;
         id_catalog[id].y = coord_y;
       }
+    }
       else
       {
         cout << "Error: duplicate coordinate entries found!  Program terminated." << endl;
